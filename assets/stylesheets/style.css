@@ -1,0 +1,511 @@
+
+/*YELLOW #ffe400*/
+
+/*RED #f72210*/
+
+/*WHITE OVERLAY #ffffffe6*/
+
+/*BLUE #3581f4*/
+
+/*LBGRAY #c2d4d7*/
+
+/*GRAY rgba(3,3,3,.5)*/
+
+
+
+/*DARKGRAY #333*/
+
+
+/*==================================*/
+
+
+h5:hover {
+	text-decoration: underline #f72210;
+	cursor: pointer;
+}
+
+a:hover {
+color: #f72210 !important;
+cursor: pointer;
+}
+
+.navbar-link:hover {
+	color: #f72210;
+}
+
+/*HEADER*/
+body {
+    font-family: 'Roboto Condensed', sans-serif !important; 
+  
+}
+
+.staticTop {
+    background-color: #f72210 ;
+    font-weight: bold;
+    color: white;
+}
+
+.staticTop .date{
+    font-weight: 500;
+}
+
+
+.staticTop button, button.navHide {
+color: #333;
+border:none;
+background-color: #ffe400;
+border-radius: 50px;
+font-weight: bold;
+width: 7em;
+height: 1.5em;
+font-size: 0.9rem;
+padding: 0;
+
+text-align: center;
+
+}
+/*NAVBAR*/
+nav {
+	font-weight:bold;
+	
+}
+
+.overlappingNav > *{
+	
+	border-left:1px solid #d9d9d9;
+    padding:0 1em;
+    font-size: 1rem;
+}
+.overlappingNav input {
+	max-width: 100px;
+}
+
+.categoriesNav > * {
+	padding: 0 1em;
+}
+
+.overlappingNav > *:hover ,
+.categoriesNav > *:hover {
+
+}
+
+
+
+.hiddenNav {
+    background-color: #f72210;
+    display: none;
+    
+}
+
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+.stickyScroll {
+    animation: 0.5s ease-out 0s 1 slideInFromTop;
+    background-color: #f72210;
+    display: flex;
+    position: fixed;
+    top:0;
+   
+}
+
+
+@media only screen and (max-width: 992px) {
+nav.navbar.navbar-expand-lg.navbar-light{
+   background-color: #f72210;
+   
+}
+
+#navHide > a {
+    border: none;
+}
+
+
+}
+
+.fixed-top{}
+
+
+.stickyScroll {
+    animation: 0.5s ease-out 0s 1 slideInFromTop;
+    background-color: #f72210;
+    display: flex;
+    position: fixed;
+    top:0;
+   
+}
+
+@media only screen and (max-width: 992px) {
+
+    .stickyScroll {display: none;}
+}
+
+
+#changeToFixed {
+
+}
+/*CATEGORY CARDS*/
+
+.sectionTitle {
+    color: rgba(3,3,3,.4);
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.categoryCard,
+.rankingsCard,
+.customCard  {
+	width: 100%;
+	position: relative;
+}
+
+/*.categoryCard .card-img,
+.rankingsCard .card-img,
+.customCard .card-img {
+	width: 350px;
+	position: relative;
+}*/
+
+.categoryCard .imgOverlay, 
+.rankingsCard .imgOverlay {
+    position: relative;
+}
+.categoryCard .overlay {
+	position: absolute;
+	bottom:0;
+	color: #f72210;
+	background-color: #ffffffe6;
+	font-weight: 700;
+	text-align: center;
+    padding: 8px 20px 8px;
+    margin-bottom: 0;
+}
+
+.categoryCard .card-title {
+	font-weight:700;
+	font-size: 1.5rem;
+}
+
+
+.categoryCard .card-text {
+	font-size: 1rem;
+}
+
+
+/*RANKINGS*/
+
+.rankingsCard .overlay {
+	position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+	color: #3581f4;
+	background-color: #ffffffe6;
+	font-weight: 700;
+	
+text-align: center;
+padding: 8px 20px 8px;
+}
+
+.rankingsCard .card-title {
+	font-weight:700;
+	font-size: 1.5rem;
+}
+
+
+.rankingsCard .card-text {
+	font-size: 1rem;
+}
+
+/*CUSTOM CARD*/
+
+
+.customCard .card-title {
+	font-weight:700;
+	font-size: 1.5rem;
+}
+
+
+.customCard .card-text {
+	font-size: 1rem;
+}
+
+
+/*SQUARE CARD W & W/o TAG*/
+
+
+.squareCard  {
+	width: 80%;
+	position: relative;
+}
+
+.squareCard .imgOverlay {
+	position:relative;
+}
+
+.squareCard  p {
+	position: absolute;
+	bottom:0;
+	margin-bottom:0;
+	color: #333;
+	background-color: #c2d4d7;
+	font-weight: 700;
+	font-size:0.8rem;
+    text-align: center;
+    padding: 4px 10px 4px;
+}
+
+.squareCard .card-title {
+	font-weight:700;
+	font-size: 1rem;
+	color:rgba(3,3,3,.5);
+}
+
+
+.squareCard  .card-text {
+	font-size: 1rem;
+}
+
+
+/*HORIZONTAL CARD*/
+
+
+.horizontalCard  {
+	max-width: 100%;
+	position: relative;
+}
+
+
+
+
+.horizontalCard .card-title {
+	font-weight:700;
+	font-size: 1rem;
+}
+
+
+.horizontalCard  .card-text {
+	font-size: 1rem;
+}
+
+
+/*DEBATE VS CARD*/
+
+
+.debateVS {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.vsSign {
+	position: absolute;
+	top: 45%;
+	align-self: center;
+	z-index:1;
+	color: white;
+	background-color: black;
+	border-radius: 50%;
+	font-weight: bold;
+	font-size: 0.7rem;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	padding: 5px 0 
+	
+}
+
+/*DEBATE CARD*/
+
+
+.debateCard  {
+	max-width: 100%;
+    position: relative;
+    border-top: 1px solid 1px solid rgba(0,0,0,.125) !important;
+}
+
+
+
+
+.debateCard .card-title {
+	font-weight:700;
+	font-size: 0.9rem;
+}
+
+
+.debateCard  .card-img {
+	width: 50px;
+}
+
+.debateCard  .card-text {
+	font-size: 0.8rem;
+}
+
+
+/*SIGNUP FORM*/
+
+.signupContainer{
+	max-width: 100%;
+	background-color:#f4f5f6;
+}
+
+.signupContainer img {
+	width:30px;
+}
+
+.signupContainer label {
+	font-weight:700;
+	color: #333;
+	font-size: 0.9rem;
+	align-self:center;
+} 
+.signupContainer input {
+	height: 70%;
+}
+.signupContainer button {
+	width:100%;
+	margin-top: 5px;
+	color: white;
+	background-color: #f72210;
+	font-weight: 700;
+	font-size: 0.9rem;
+	border: none;
+	text-align:center;
+}
+
+/*DIVIDER*/
+
+.sectionDivider h {
+    color: #333;
+    font-weight: 700;
+}
+
+.sectionDivider > * {
+    padding: 0.3em;
+}
+
+.sectionDivider img {
+    width: 30px;
+}
+
+/*IN THE MAGAZINE CARDS*/
+
+.ITMCard {
+	width: 100%;
+}
+
+.ITMCard .card-title {
+	font-weight:700;
+	font-size: 1rem;
+}
+
+
+.ITMCard .sctBadge {
+	color: white;
+	background-color:#f72210; 
+	font-size: 0.8rem;
+	display:inline;
+	font-weight:bold;
+	padding: 5px;
+}
+
+.ITMCard .catBadge {
+	color: red;
+	font-size:0.8rem;
+	background-color: none;
+	font-weight:bold;
+}
+
+/*BOTTOM BLOCK*/
+
+
+/*NEWSLETTER FORM*/
+
+.bottomBlock .title  {
+	color: #f72210;
+	font-size:0.8rem;
+	font-weight:700;
+	padding-left: 10px;
+}
+
+.BBsuscribe {
+	padding:10px;
+}
+
+
+.BBsuscribe .card-title {
+	font-weight:700;
+}
+
+.BBsuscribe .card-text{
+	font-size:0.9rem;
+}
+
+.BBsuscribe button{
+
+	color: white;
+	background-color: #f72210;
+	font-weight: 700;
+	font-size: 0.9rem;
+	border: none;
+	text-align:center;
+	border-radius:5px;
+	width:100px;
+	height: 30px
+}
+
+/*bblock newsletter*/
+
+.NLForm .card-title {
+	font-weight:700;
+}
+
+.NLForm .card-text {
+	font-size:0.9rem;
+}
+
+.NLForm button {
+	color: white;
+	background-color: #f72210;
+	font-weight: 700;
+	font-size: 0.9rem;
+	border: none;
+	text-align:center;
+	border-radius:5px;
+	width:100%;
+	height:30px;
+	margin-top:10px;
+}
+
+/*FOOTER*/
+
+
+ footer {
+     margin-top: 5em;;
+ }
+footer .socialRight > * {
+    padding: 1em;
+}
+
+footer .socialRight > *:hover{
+    cursor: pointer;
+    color: rgba(3,3,3,.5);;
+}
+
+footer .legal a, footer .editions a {
+    color: rgba(3,3,3,.5);
+    font-size: 0.9rem;
+    
+}
+
+footer .legal a:hover, footer .editions a:hover {
+    cursor: pointer;
+    color: #333;
+}
